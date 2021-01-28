@@ -1,0 +1,18 @@
+#block header
+<title> Galleria 1 </title>
+
+<body>
+
+#block menu.html
+
+<div class="wrapper">
+<div class="">
+    #include kroatia.md
+  </div>
+
+  #include gallery.md
+
+</div>
+
+</body>
+#block footer

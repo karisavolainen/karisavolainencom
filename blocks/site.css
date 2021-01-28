@@ -1,0 +1,148 @@
+body {
+  background-color: #1f1e1f;
+  color: #ddd;
+  margin: 10px;
+  font-family: "PT Serif";
+  font-size: 0.9em;
+  line-height: 1.75;
+}
+p {
+  margin-right: 30px;
+}
+h1, h2 {
+  font-family: "Montserrat";
+  font-weight: 500;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .125em;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gallery {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box {
+  /* background-color: #888; */
+  border-radius: 3px;
+  padding: 20px;
+}
+.fullheight {
+
+}
+img {
+  border-radius: 3px;
+  max-width: 100%;
+}
+.wide {
+  grid-column: span 2;
+
+}
+.portrait {
+  grid-column: span 1;
+
+}
+@media screen and (max-width: 1030px) {
+  .portrait { grid-column: span 2; }
+}
+
+
+/* navigation */
+nav {
+    background: rgba(0, 0, 0 ,0.85);
+    padding: 10px;
+    margin: -10px;
+    height: 100vh;
+    width: 0;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -ms-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    display: none;
+}
+li {
+    list-style-type: none;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+li a {
+    color: #aaa;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+hr {
+  align: left;
+  width: 70%;
+  border-color: red;
+}
+input {
+    /* hide checkbox */
+    display: none;
+}
+.fa {
+    font-size: 2em !important;
+    color: #888;
+}
+.menuicon {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.navi {
+  margin-top: 50px;
+}
+
+.hamppari {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 15px;
+    margin-right: 0.3em;
+    border-top: 0.2em solid #fff;
+    border-bottom: 0.2em solid #fff;
+}
+
+.hamppari:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid #fff;
+}
+#menu {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    padding: 10px;
+}
+#hamburger:checked ~ nav {
+    display: block;
+    width: 250px;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -ms-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+/* navigation */

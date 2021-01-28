@@ -1,0 +1,15 @@
+#block header
+<title> Galleria 1 </title>
+</head>
+<body>
+<div class="wrapper">
+  <div class="">
+    #include kapverde.md
+  </div>
+
+  #include gallery.md
+
+</div>
+
+</body>
+#block footer
